@@ -123,7 +123,7 @@ function Home() {
               <Overview>{nowMovies?.results[0].overview}</Overview>
               <InfoLink
                 to={{
-                  pathname: `/${nowMovies?.results[0].id}`,
+                  pathname: `movie/${nowMovies?.results[0].id}`,
                   state: { id: nowMovies?.results[0].id },
                 }}
                 onClick={() => onClick(nowMovies?.results[0].id)}
